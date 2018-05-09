@@ -1,0 +1,40 @@
+[ 2018-05-07T20:54:43+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '11111' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-07T20:59:35+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '11111' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-07T21:00:46+08:00 ] 127.0.0.1 /MC/Api.php/Tool/sendCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-07T21:31:59+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+

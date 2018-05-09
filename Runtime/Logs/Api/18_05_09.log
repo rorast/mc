@@ -1,0 +1,501 @@
+[ 2018-05-09T11:44:03+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '12345678901' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `gs_member` SET `token`='39789359f9f4218aa7425d9e61e94668',`last_time`='1525837443' WHERE `id` = 204 [ RunTime:0.0104s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '12345678901' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525837443 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:44:06+08:00 ] 127.0.0.1 /MC/Api.php/User/getUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:44:06+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:44:06+08:00 ] 127.0.0.1 /MC/Api.php/Tool/getPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `gs_market_price` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `gs_market_price` WHERE `start` <= '2018-05-09' ORDER BY start desc LIMIT 7   [ RunTime:0.0006s ]
+
+[ 2018-05-09T11:44:06+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0091s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525837446 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:47:07+08:00 ] 127.0.0.1 /MC/Api.php/User/getWallet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0082s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gs_member_cash_log` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `gs_member_cash_log` WHERE `touch_member` = '12345678901' AND `status` = 0 AND `zhuangtai` = 1 AND `wallet` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0049s ]
+SQL: SELECT * FROM `gs_member_cash_log` WHERE `touch_member` = '12345678901' AND `status` = 1 AND `wallet` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:50:55+08:00 ] 127.0.0.1 /MC/Api.php/User/getUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0091s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:50:55+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:50:55+08:00 ] 127.0.0.1 /MC/Api.php/Tool/getPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `gs_market_price` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `gs_market_price` WHERE `start` <= '2018-05-09' ORDER BY start desc LIMIT 7   [ RunTime:0.0003s ]
+
+[ 2018-05-09T11:50:55+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0078s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525837855 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:19+08:00 ] 127.0.0.1 /MC/Api.php/User/getUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0089s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:20+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:20+08:00 ] 127.0.0.1 /MC/Api.php/Tool/getPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `gs_market_price` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `gs_market_price` WHERE `start` <= '2018-05-09' ORDER BY start desc LIMIT 7   [ RunTime:0.0003s ]
+
+[ 2018-05-09T11:51:20+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525837880 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:28+08:00 ] 127.0.0.1 /MC/Api.php/User/getBroodingLog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+ERR: Too few arguments to function I(), 0 passed in C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php on line 383 and at least 1 expected
+
+[ 2018-05-09T11:51:29+08:00 ] 127.0.0.1 /MC/Api.php/User/getUserFinance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0072s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+ERR: Too few arguments to function I(), 0 passed in C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php on line 339 and at least 1 expected
+
+[ 2018-05-09T11:51:29+08:00 ] 127.0.0.1 /MC/Api.php/User/getHangSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0093s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+ERR: Too few arguments to function I(), 0 passed in C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php on line 500 and at least 1 expected
+
+[ 2018-05-09T11:51:30+08:00 ] 127.0.0.1 /MC/Api.php/User/getUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0093s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:30+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:30+08:00 ] 127.0.0.1 /MC/Api.php/Tool/getPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `gs_market_price` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `gs_market_price` WHERE `start` <= '2018-05-09' ORDER BY start desc LIMIT 7   [ RunTime:0.0003s ]
+
+[ 2018-05-09T11:51:30+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0077s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525837890 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:51:32+08:00 ] 127.0.0.1 /MC/Api.php/User/getWallet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0096s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gs_member_cash_log` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `gs_member_cash_log` WHERE `touch_member` = '12345678901' AND `status` = 0 AND `zhuangtai` = 1 AND `wallet` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `gs_member_cash_log` WHERE `touch_member` = '12345678901' AND `status` = 1 AND `wallet` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:55:57+08:00 ] 127.0.0.1 /MC/Api.php/User/getUserAnimal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0092s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gs_beltline` [ RunTime:0.0105s ]
+SQL: UPDATE `gs_beltline` SET `status`='2' WHERE `userid` = 204 AND `status` = 1 AND `expired_time` <= 1525838157 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0075s ]
+SQL: SELECT animal_on as name FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525838157  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:55:57+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:55:57+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0097s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525838157 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:56:31+08:00 ] 127.0.0.1 /MC/Api.php/Farms/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0082s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T11:56:33+08:00 ] 127.0.0.1 /MC/Api.php/Farms/buyAnimal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0086s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `create_time` = 1525795200 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T13:51:12+08:00 ] 127.0.0.1 /MC/Api.php/User/marketList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gs_market` [ RunTime:0.0108s ]
+SQL: SELECT m.id,m.userid,m.number,member.account FROM gs_market as m INNER JOIN gs_member as member on member.id = m.userid  WHERE m.status = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T13:51:13+08:00 ] 127.0.0.1 /MC/Api.php/User/getMyDeal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0094s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_market` [ RunTime:0.0070s ]
+SQL: SELECT market.*,user.account FROM gs_market as market inner join gs_member as user on user.id = market.userid  WHERE market.touserid = '204' AND market.status = 2  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T13:51:15+08:00 ] 127.0.0.1 /MC/Api.php/User/marketList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0092s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gs_market` [ RunTime:0.0068s ]
+SQL: SELECT m.id,m.userid,m.number,member.account FROM gs_market as m INNER JOIN gs_member as member on member.id = m.userid  WHERE m.status = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:28:13+08:00 ] 127.0.0.1 /MC/Api.php/User/getUserAnimal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0104s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `gs_beltline` [ RunTime:0.0077s ]
+SQL: UPDATE `gs_beltline` SET `status`='2' WHERE `userid` = 204 AND `status` = 1 AND `expired_time` <= 1525847293 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0074s ]
+SQL: SELECT animal_on as name FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525847293  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:28:13+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:28:13+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0082s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '39789359f9f4218aa7425d9e61e94668' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525847293 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:41:51+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '12345678901' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `gs_member` SET `token`='833d313a2ef4eba34c666616721278a4',`last_time`='1525848111' WHERE `id` = 204 [ RunTime:0.0091s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '12345678901' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525848111 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:41:52+08:00 ] 127.0.0.1 /MC/Api.php/User/getUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0096s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '833d313a2ef4eba34c666616721278a4' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `id` = 204 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:41:52+08:00 ] 127.0.0.1 /MC/Api.php/User/getNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_notice` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `gs_notice` ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-09T14:41:53+08:00 ] 127.0.0.1 /MC/Api.php/Tool/getPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `gs_market_price` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `gs_market_price` WHERE `start` <= '2018-05-09' ORDER BY start desc LIMIT 7   [ RunTime:0.0004s ]
+
+[ 2018-05-09T14:41:53+08:00 ] 127.0.0.1 /MC/Api.php/User/getResources
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+NOTIC: [2] Declaration of Api\Controller\UserController::getUser() should be compatible with Api\Controller\CommonController::getUser($userId) C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0100s ]
+SQL: SELECT `id` FROM `gs_member` WHERE `token` = '833d313a2ef4eba34c666616721278a4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,realname as nickname,`feed`,`phone`,`level`,`money`,`currency`,`action_code` FROM `gs_member` WHERE `token` = '833d313a2ef4eba34c666616721278a4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gs_user_animal` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gs_user_animal` WHERE `userid` = 204 AND `expired_time` > 1525848113 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+

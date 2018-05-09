@@ -1,0 +1,64 @@
+[ 2018-05-06T13:32:16+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-06T13:33:21+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '17615803214' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-06T13:40:20+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '18604060133' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-06T15:48:29+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '18302914490' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-06T15:48:37+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '18302914490' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
+[ 2018-05-06T15:49:18+08:00 ] 127.0.0.1 /MC/Api.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `gs_member` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`account`,`password`,`status`,`token`,`nickname`,`active`,`phone`,`level`,`money`,`feed`,`currency`,`action_code` FROM `gs_member` WHERE `account` = '18302914490' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg C:\phpStudy\PHPTutorial\WWW\MC\App\Api\Common\function.php 第 32 行.
+
